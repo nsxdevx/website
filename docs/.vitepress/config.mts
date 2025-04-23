@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "NsxBot",
   description: "Go语言的全新 Onebot 框架",
-  base:"website",
+  base:"/website/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
