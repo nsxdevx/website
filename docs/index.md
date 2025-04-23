@@ -14,11 +14,17 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: 简单
+    details: 大概是 Golang 最简单的 OneBot 框架！
+    icon: 🤏
+  - title: 高效
+    details: 基于 Golang ，快速编译到任意平台高效运行！
+    icon: 🚀
+  - title: 可扩展
+    details: 优雅的自定义 OneBot 扩展事件与 API 接口~
+    icon: 🛍️
+  - title: 强类型
+    details: 泛型化设计，远离 any ~
+    icon: 🔒
 ---
 
