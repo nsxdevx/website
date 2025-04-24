@@ -19,6 +19,7 @@ export default defineConfig({
         items: [
           { text: '介绍', link: '/start/introduction' },
           { text: '准备', link: '/start/start' },
+          { text: '写一个聊天机器人吧', link: '/start/coding' },
         ]
       },
       {
