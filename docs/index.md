@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "NsxBot"
-  tagline: Golang OneBot开发框架
+  tagline: Golang OneBot 开发框架
   actions:
     - theme: brand
       text: 快速开始
