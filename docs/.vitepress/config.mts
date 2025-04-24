@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "NsxBot",
-  description: "Go语言的全新 Onebot 框架",
+  description: "Golang的全新 Onebot 框架",
   base:"/website/",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -14,10 +14,18 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '快速开始',
+        collapsed: false,
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '介绍', link: '/start/introduction' },
+          { text: '准备', link: '/start/start' },
+        ]
+      },
+      {
+        text: '其他',
+        collapsed: false,
+        items: [
+          { text: 'OneBot 11 实现', link: '/other/onebot11' },
         ]
       }
     ],
