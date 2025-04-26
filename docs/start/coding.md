@@ -10,8 +10,6 @@ go mod init nsxai
 ```bash
 go get -u github.com/nsxdevx/nsxbot
 ```
-> [!IMPORTANT] 
-> 未发布第一版测试，你会拉取到仓库的最新提交，不保证可靠，框架正在开发中......
 ## 连接到OneBot
 这里采用的是将OneBot实现作为WServer, 我们主动去连接.
 ```go
