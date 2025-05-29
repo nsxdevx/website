@@ -64,7 +64,7 @@ func main() {
 		Url: "localhost:4000",
 	})
 	bot := nsx.Default(driver)
-	pvt := nsx.OnEvent[types.EventPvtMsg](bot)
+	pvt := nsx.OnEvent[event.PrivateMessage](bot)
 
 	adminuin, _ := strconv.ParseInt(os.Getenv("ADMIN_UIN"), 10, 64)
 	baseUrl := os.Getenv("NEWAPI_BASEURL")
@@ -72,7 +72,7 @@ func main() {
 
 	client := openai.NewClient(option.WithAPIKey(key), option.WithBaseURL(baseUrl))
 
-	pvt.Handle(func(ctx *nsx.Context[types.EventPvtMsg]) {
+	pvt.Handle(func(ctx *nsx.Context[event.PrivateMessage]) {
 		msg := ctx.Msg
 		text, err := msg.TextFirst()
 		if err != nil {
