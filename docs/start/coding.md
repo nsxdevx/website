@@ -41,10 +41,10 @@ func main() {
 		Url: "localhost:4000",
 	})
 	bot := nsx.Default(driver)
-	pvt := nsx.OnEvent[types.EventPvtMsg](bot)
+	pvt := nsx.OnEvent[event.PrivateMessage](bot)
 
 	adminuin, _ := strconv.ParseInt(os.Getenv("ADMIN_UIN"), 10, 64)
-	pvt.Handle(func(ctx *nsx.Context[types.EventPvtMsg]) {
+	pvt.Handle(func(ctx *nsx.Context[event.PrivateMessage]) {
 		ctx.Msg.Reply(ctx, "测试")
 	}, filter.OnlyUsers(adminuin))
 
