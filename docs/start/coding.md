@@ -38,7 +38,7 @@ func main() {
 ```go
 func main() {
 	driver := driver.NewWSClient(1*time.Second, driver.WSnode{
-		Url: "localhost:4000",
+		Url: "ws://localhost:4000",
 	})
 	bot := nsx.Default(driver)
 	pvt := nsx.OnEvent[event.PrivateMessage](bot)
